@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Image Generator</title>
+    <script>
+        function redirectToRandomImage() {
+            // Generate a random number between 1 and 22
+            var randomNumber = Math.floor(Math.random() * 22) + 1;
+
+            // Redirect the user to the corresponding image URL
+            window.location.href = "http://example.com/images/image" + randomNumber + ".jpg";
+        }
+    </script>
+</head>
+<body>
+    <h1>Random Image Generator</h1>
+    <button onclick="redirectToRandomImage()">Generate Random Image</button>
+</body>
+</html>
